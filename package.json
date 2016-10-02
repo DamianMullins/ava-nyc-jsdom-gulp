@@ -2,7 +2,7 @@
   "name": "ava-nyc-jsdom-gulp",
   "version": "1.0.0",
   "scripts": {
-    "test": "nyc ava",
+    "test": "ava",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Damian Mullins",
