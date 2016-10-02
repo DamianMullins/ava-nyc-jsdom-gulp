@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "ava",
-    "nyc": "nyc npm test",
+    "nyc": "nyc ava",
     "coverage": "nyc -r text -r lcov report | coveralls"
   },
   "author": "Damian Mullins",
