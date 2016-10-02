@@ -4,8 +4,7 @@
   "scripts": {
     "test": "ava",
     "nyc": "nyc npm test",
-    "nyc-debug": "nyc --show-process-tree npm test",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc -r text -r lcov report | coveralls"
   },
   "author": "Damian Mullins",
   "license": "ISC",
