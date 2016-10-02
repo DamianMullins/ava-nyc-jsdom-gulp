@@ -2,7 +2,10 @@
   "name": "ava-nyc-jsdom-gulp",
   "version": "1.0.0",
   "scripts": {
-    "test": "gulp"
+    "test": "ava",
+    "nyc": "nyc npm test",
+    "nyc-debug": "nyc --show-process-tree npm test",
+    "coverage": "nyc report --reporter=text-lcov"
   },
   "author": "Damian Mullins",
   "license": "ISC",
@@ -14,13 +17,21 @@
     "gulp": "^3.9.1",
     "gulp-ava": "^0.14.1",
     "jsdom": "^9.5.0",
-    "jsdom-global": "^2.1.0",
+    "jsdom-global": "^2.1.0"
+  },
+  "dependencies": {
+    "coveralls": "^2.11.14",
     "nyc": "^8.3.0"
   },
   "ava": {
     "require": [
       "babel-core/register",
       "./test/helpers/setup-browser-env.js"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
     ]
   }
 }
