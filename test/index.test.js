@@ -29,5 +29,3 @@ test('func false', assert => {
     // Assert
     assert.is(result, 'false');
 });
-
-
