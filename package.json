@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "nyc ava",
-    "coverage": "nyc -r text -r lcov report | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Damian Mullins",
   "license": "ISC",
